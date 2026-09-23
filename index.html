@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Mbolonzi — Python Developer</title>
+<style>
+  :root {
+    --bg: #14171B;
+    --panel: #1B1F24;
+    --border: #2A2F36;
+    --text: #E8E6E1;
+    --muted: #8A9199;
+    --accent: #E8A33D;
+    --mono: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--border);
+  }
+  header .tag {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+  }
+  header h1 {
+    font-size: 32px;
+    margin: 10px 0 12px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 16px;
+    max-width: 540px;
+  }
+  header .location {
+    margin-top: 16px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+
+  .demo-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .demo-card .info h3 { font-size: 19px; margin-bottom: 6px; }
+  .demo-card .info p { color: var(--muted); font-size: 14px; max-width: 380px; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #1A1400;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .projects { display: grid; gap: 16px; }
+  .project {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px 24px;
+  }
+  .project .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .project h3 { font-size: 17px; }
+  .project .type {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  .project p.desc {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 10px 0 14px;
+  }
+  .project .links a {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  .project .links a:hover { text-decoration: underline; }
+
+  footer {
+    padding: 40px 0 64px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="tag">PYTHON &middot; AUTOMATION &middot; AI TOOLS</div>
+    <h1>Daniel Mbolonzi</h1>
+    <p>I build small, working tools — trackers, dashboards, and coaching apps — that turn everyday numbers into a straight answer. No fluff, no jargon.</p>
+    <div class="location">Nairobi, Kenya &middot; Open to freelance work</div>
+  </header>
+
+  <section>
+    <h2>See it in action</h2>
+    <div class="demo-card">
+      <div class="info">
+        <h3>Fitness Coach</h3>
+        <p>Enter today's sleep, water, and steps. Get a straight HIT or MISS verdict and a coaching note — right in your browser, no signup.</p>
+      </div>
+      <a class="btn" href="https://deman250.github.io/browser-coach/" target="_blank" rel="noopener">Try it now &rarr;</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <div class="row">
+          <h3>Fitness Coach</h3>
+          <span class="type">Web tool</span>
+        </div>
+        <p class="desc">A live tool that reads your daily numbers and tells you, plainly, whether today hit the mark — and what to fix if it didn't.</p>
+        <div class="links">
+          <a href="https://deman250.github.io/browser-coach/" target="_blank" rel="noopener">Live demo</a>
+          <a href="https://github.com/Deman250/browser-coach" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row">
+          <h3>Performance Predictor</h3>
+          <span class="type">ML + coaching</span>
+        </div>
+        <p class="desc">Trained on 28 days of real habits, this tool predicts whether you'll hit your daily goal and writes a coaching message explaining why.</p>
+        <div class="links">
+          <a href="https://github.com/Deman250/smp-tracker" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row">
+          <h3>Multi-Source Dashboard</h3>
+          <span class="type">Reporting</span>
+        </div>
+        <p class="desc">Pulls numbers from several sources into one clean report — the kind of manual, repetitive reporting task this replaces in minutes.</p>
+        <div class="links">
+          <a href="https://github.com/Deman250/api-dashboard" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row">
+          <h3>Fitness Log Analysis</h3>
+          <span class="type">Data analysis</span>
+        </div>
+        <p class="desc">Turns a month of raw fitness logs into a weekly breakdown, showing exactly which habits actually moved the needle.</p>
+        <div class="links">
+          <a href="https://github.com/Deman250/data-analysis-report" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <a href="mailto:danielmbolonzi@gmail.com">danielmbolonzi@gmail.com</a>
+    &middot; <a href="https://github.com/Deman250" target="_blank" rel="noopener">github.com/Deman250</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
