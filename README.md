@@ -2,7 +2,7 @@
 
 A single-page portfolio site built to showcase my work in Python automation, APIs, and ML-powered tools.
 
-**Live site:** [Add your GitHub Pages / hosting link here once published]
+**Live site:**    https://deman250.github.io/portfolio/
 
 ## What's on the page
 
